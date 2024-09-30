@@ -42,6 +42,11 @@ criterio.Optimista(tabla1)
 El criterio optimista nos da que la decisión 4 es la mejor opción
 
 ```{r,echo=FALSE}
+criterio.PuntoIdeal(tablaX = tabla1)
+```
+Segun este criterio la mejor decision es la 4
+
+```{r,echo=FALSE}
 criterio.Savage(tabla1)
 ```
 el criterio de savage tambien nos da la decision 4 como la mas recomendada
@@ -59,6 +64,37 @@ Como podemos observar, para todo alfa entre 0 y 1 la mejor decision es la 4
 En resumen, la decision 4 es la mas recomendable (todos los metodos la dan como mejor decision)
 
 ## Resolucion problema 2 : situacion desfavorable
+En este caso la tabla sera de costos y no de beneficios como antes
+
+```{r,echo=FALSE}
+criterio.Wald(tabla1,favorable = F)
+```
+La mejor decision segun el criterio de wald es la 2
+
+```{r,echo=FALSE}
+criterio.Laplace(tabla1,favorable = F)
+```
+La mejor decision es la 2 segun el criterio de Laplace
+
+```{r,echo=FALSE}
+criterio.Optimista(tabla1,favorable = F)
+```
+La mejor decision segun este criterio es la 2
+
+```{r}
+criterio.Savage(tabla1,favorable = F)
+```
+Este criterio nos da como mejores opciones la 2 y la 3
+
+```{r,echo=FALSE}
+criterio.PuntoIdeal(tablaX = tabla1,favorable = F)
+```
+Segun este criterio la mejor opcion es la decision 2
+
+```{r,echo=FALSE}
+dibuja.criterio.Hurwicz(tablaX = tabla1,favorable = F)
+```
+La mejor decision es la 2
 
 # Problema 2
 
