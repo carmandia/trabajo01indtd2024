@@ -31,6 +31,32 @@ En primer lugar cargamos la tabla de decisiones y estados de la naturaleza
 ```
 
 ## Resolucion problema 1 : situacion favorable
+```{r,echo=FALSE}
+criterio.Wald(tabla1)
+```
+Nos da que la mejor opcion es la decision 4
+
+```{r,echo=FALSE}
+criterio.Optimista(tabla1)
+```
+El criterio optimista nos da que la decisión 4 es la mejor opción
+
+```{r,echo=FALSE}
+criterio.Savage(tabla1)
+```
+el criterio de savage tambien nos da la decision 4 como la mas recomendada
+
+```{r,echo=FALSE}
+criterio.Laplace(tabla1)
+```
+el criterio de laplace nos da la decision 4 como la mejor
+
+```{r}
+dibuja.criterio.Hurwicz(tablaX = tabla1)
+```
+Como podemos observar, para todo alfa entre 0 y 1 la mejor decision es la 4
+
+En resumen, la decision 4 es la mas recomendable (todos los metodos la dan como mejor decision)
 
 ## Resolucion problema 2 : situacion desfavorable
 
@@ -60,6 +86,6 @@ A continuacion resolveremos el problema con la funcion q calcula todos los crite
 ```{r}
 criterio.Todos(tabla2,alfa = 0.5)
 ```
-Si observamos la salida q nos proporciona esta funcion, todos los criterios excepto el de wald, que nos dice que la mejor opcion es elegir el primer caso, el resto de criterios nos dice q la mejor opcion es tomar la decision 4
+Si observamos la salida q nos proporciona esta función, todos los criterios excepto el de Wald, que nos dice que la mejor opción es elegir el primer caso, el resto de criterios nos dice q la mejor opción es tomar la decisión 4
 
 
