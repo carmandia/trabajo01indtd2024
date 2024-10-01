@@ -122,6 +122,7 @@ A continuacion resolveremos el problema con la funcion q calcula todos los crite
 ```{r}
 criterio.Todos(tabla2,alfa = 0.5)
 ```
-Si observamos la salida q nos proporciona esta función, todos los criterios excepto el de Wald, que nos dice que la mejor opción es elegir el primer caso, el resto de criterios nos dice q la mejor opción es tomar la decisión 4
+Si observamos la salida q nos proporciona esta función, todos los criterios excepto el de Wald, que nos dice que la mejor opción es elegir el primer caso, el resto de criterios nos dice q la mejor opción es tomar la decisión 4, por lo que en caso de tener que aconsejar a Pablo, en caso de ser precavidos le aconsejaríamos
+que la mejor opción es la decisión 1 (aunque Savage da la decisión 4 como la mejor), y en caso de ser optimista le aconsejariamos que tomara la 4ª decision
 
 
